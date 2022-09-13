@@ -49,7 +49,7 @@ a:hover {
 
 
 #logo {
-  width: 200px;
+  width: 15em;
   content: url("../img/logo.svg");
   position: absolute;
   z-index: 1;
@@ -57,7 +57,7 @@ a:hover {
   right: 0;
   margin: auto;
   transition: all 0.5s;
-  padding-top: 15vh;
+  padding-top: 30vh;
 }
 
 
@@ -405,7 +405,7 @@ footer em {
 @media (max-width: 767px) {
 
   #logo {
-    width: 150px;
+    width: 15em;
   }
 
 
