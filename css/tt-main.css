@@ -40,9 +40,7 @@ a:hover {
 font-size: 1.25em;
 padding-left: .5em;
 }
-.navbar a {
-  font-size:;
-}
+
 .primary-button a {
   display: inline-block;
   background-color: #F49423;
@@ -101,6 +99,7 @@ padding-left: .5em;
   max-width: 45%;
   margin: 0 1em 2em;
   text-align: center;
+  filter: brightness(.8);
 }
 
 .service-content .service-item {
@@ -130,6 +129,7 @@ padding-left: .5em;
 
 .service-content .service-container:hover {
   cursor: pointer;
+  filter: brightness(1);
 } 
 
 #buchstaben {
@@ -321,12 +321,26 @@ body {
 
   .navbar-brand img {
   width: 2em;
+  }
+
+  .navbar-brand span {
+    font-size: unset;
+  }
 }
-.navbar-brand span {
-font-size: unset;
-  
+
+@media (max-width: 915px) and (orientation: landscape) {
+  #logo {
+    width: 9em;
+  }
 }
-@media (max-width: 767px) {
+
+@media (max-width: 767px) and (orientation: landscape) {
+  #logo {
+    width: 7em;
+  }
+}
+
+@media (max-height: 767px) and (orientation: portrait) {
 
   #logo {
     width: 15em;
@@ -361,10 +375,4 @@ font-size: unset;
   .container {
     max-width: 1170px;
   }
-}
-
-@media (max-height: 767px) {
- #logo {
-  width: 6em;
- }
 }
