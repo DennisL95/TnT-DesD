@@ -404,14 +404,18 @@ body {
     text-align: center;
   }
 
-
-
   .service-content .left-text ul {
     text-align: left;
   }
 
   .service-content .service-item {
-    height: 6.5em;
+    height: 7em;
+  }
+
+  .service-content .service-container {
+    ms-flex:  0 0 45%;
+    flex: 0 0 45%;
+    margin: -0.5em 0.5em 1em
   }
 }
 
@@ -419,5 +423,17 @@ body {
 
   .container {
     max-width: 1170px;
+  }
+}
+
+@media (hover: none) {
+
+    .service-content .service-container:hover {
+    cursor: default;
+    filter: unset;
+  } 
+
+  .service-content .service-container {
+    filter: unset;
   }
 }
