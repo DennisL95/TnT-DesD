@@ -369,11 +369,8 @@ body {
   }
 }
 
-@media (max-width: 915px) and (orientation: landscape) {
-  .banner-content {
-    width: 9rem;
-  }
-}
+
+
 
 @media (max-width: 767px) and (orientation: landscape) {
   .banner-content {
@@ -416,6 +413,50 @@ body {
     ms-flex:  0 0 45%;
     flex: 0 0 45%;
     margin: -0.5em 0.5em 1em
+  }
+}
+
+@media (max-width: 915px) and (orientation: landscape) {
+  .banner-content {
+    width: 9rem;
+    padding-top: 30vh;
+
+  }
+  .service-content .service-container {
+    -ms-flex: 0 0 22%;
+    flex: 0 0 22%;
+    max-width: 90%;
+    margin: 1em 0.5em 0;
+  }
+.service-content .service-item {
+    height:  7em;
+  }
+}
+
+@media (max-height: 915px) and (orientation: portrait) {
+
+  .banner-content {
+    width: 15rem;
+  }
+
+  .service-content {
+    padding-top: 15vh;
+    padding-bottom: 2vh;
+    text-align: center;
+  }
+
+  .service-content .left-text ul {
+    text-align: left;
+  }
+
+  .service-content .service-item {
+    height: 10em;
+  }
+
+  .service-content .service-container {
+    ms-flex:  0 0 45%;
+    flex: 0 0 45%;
+    margin: -.5em 0.5em 1em
   }
 }
 
