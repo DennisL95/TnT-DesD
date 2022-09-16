@@ -2,6 +2,16 @@
 
 Created by Dennis Linnemann
 
+- Splash Page für Cookies
+- Impressum & AGB hinzufügen (footer)
+    -AGB PDF, Impressum  in Footer (eventuell link in navigation)
+- Kontakt bearbeiten für besseres Scaling (zu klein auf <250dpi)
+- Social Media Links auswechseln
+- Bilder ersetzen
+- Parallax korrigieren
+- Navbar ausblenden ? Mobile-only ?
+- Fixiertes Scrolling für Main Content Bereich ?
+
 */
 p {
   font-size: 15px;
@@ -27,6 +37,7 @@ a:hover {
 /*----------
   MAIN
 ----------*/
+
 .navbar-brand{
   display: inline-flex;
   align-items: center;
@@ -175,14 +186,30 @@ padding-left: .5em;
   overflow: hidden;
   }
 
+.main-content h1 {
+  color: #F49423;
+  font-size: 3em;  
+}
+.main-content h2 {
+  color: #F49423;
+  margin-top: -.5em;
+}
+.main-content span {
+  font-size: 1.25em;
+  display: inline-block;
+  margin-bottom: 2em;
+  margin-top: 1em;
+}
+
 .main-container {
   position: relative;
   background-color: #242529;
   float: left;
   width: 50%;
   height: 100vh;
-  padding-top: 15vh;
-  padding-left: 15vh;
+  padding-top: 12vh;
+  padding-left: 10vh;
+  padding: 12vh 5vh 0 10vh;
 
 }
 
