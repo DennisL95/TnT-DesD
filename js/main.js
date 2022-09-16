@@ -19,7 +19,7 @@ jQuery(document).ready(function($) {
     });
 
 
-    $('body').scrollspy({ 
+    /*$('body').scrollspy({ 
         target: '.navbar',
         offset: 200
     });
@@ -56,5 +56,5 @@ jQuery(document).ready(function($) {
         
     });
 
-
+*/
 });
