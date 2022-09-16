@@ -1,60 +1,36 @@
-/* 
-
-Vanilla Template
-
-https://templatemo.com/tm-526-vanilla
-
-*/
-
 jQuery(document).ready(function($) {
 
 	'use strict';
 
     var top_header = $('.parallax-content');
-    top_header.css({'background-position':'center center'}); // better use CSS
+    top_header.css({'background-position':'center center'}); // CSS benutzen (?)
 
     $(window).scroll(function () {
     var st = $(this).scrollTop();
     top_header.css({'background-position':'center calc(50% + '+(st*.5)+'px)'});
     });
 
+  $(document).ready(function() {
+        // Smooth Scrolling für alle links
+        $(".navbar a, .service-content a, .primary-button a").on('click', function(event) {
 
-    /*$('body').scrollspy({ 
-        target: '.navbar',
-        offset: 200
-    });
-      
-      // smoothscroll on sidenav click
+          // Sicherstellen dass dieser Hash einen Wert hat, bevor der Standardwert überschrieben wird
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
 
-    $('.tabgroup > div').hide();
-        $('.tabgroup > div:first-of-type').show();
-        $('.tabs a').click(function(e){
-          e.preventDefault();
-            var $this = $(this),
-            tabgroup = '#'+$this.parents('.tabs').data('tabgroup'),
-            others = $this.closest('li').siblings().children('a'),
-            target = $this.attr('href');
-        others.removeClass('active');
-        $this.addClass('active');
-        $(tabgroup).children('div').hide();
-        $(target).show();
-      
-    })
+            // Hash largern
+            var hash = this.hash;
 
-    var owl = $("#owl-testimonials");
+            // JQuery's animate() benutzen um Smooth Page Scroll hinzuzufügen
+            // Die optionale Zahl 800 ist die Zeit in Millisekunden, dies dauert das Ziel zu erreichen
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 800, function() {
 
-      owl.owlCarousel({
-        
-        pagination : true,
-        paginationNumbers: false,
-        autoPlay: 6000, //Set AutoPlay to 3 seconds
-        items : 3, //10 items above 1000px browser width
-        itemsDesktop : [1000,3], //5 items between 1000px and 901px
-        itemsDesktopSmall : [900,2], // betweem 900px and 601px
-        itemsTablet: [600,1], //2 items between 600 and 0
-        itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
-        
-    });
-
-*/
-});
+              // Hash (#) hinzufügen, wenn das scrolling vollendet ist (Standardverhalten)
+              window.location.hash = hash;
+            });
+          } // End if
+        });
+      });
