@@ -10,12 +10,60 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/fontAwesome.css">
+    <link rel="stylesheet" href="css/cookie-consent.css"/>
     <link rel="stylesheet" href="css/tt-main.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
   </head>
 
   <body>
+
+<!--Modal: modalCookie-->
+  <div class="modal fade top" id="modalCookie1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+       aria-hidden="true" data-backdrop="true">
+    <div class="modal-dialog modal-frame modal-top modal-notify modal-info" role="document">
+      <!--Content-->
+      <div class="modal-content">
+        <!--Body-->
+        <div class="modal-body">
+          <div class="row d-flex justify-content-center align-items-center">
+
+            <p class="pt-3 pr-2">We use cookies to improve your website experience</p>
+
+            <a type="button" class="btn btn-primary">Learn more
+              <i class="fas fa-book ml-1"></i>
+            </a>
+            <a type="button" class="btn btn-outline-primary waves-effect" data-dismiss="modal">Ok, thanks</a>
+          </div>
+        </div>
+      </div>
+      <!--/.Content-->
+    </div>
+  </div>
+  <!--Modal: modalCookie-->
+
+
+
+<!--<div class="row cookie-overlay">
+      <div class="col-md-4 col-sm-12 button-fixed">
+        <div class="p-3 pb-4 bg-custom text-white">
+          <div class="row">
+            <div class="col-10">
+              <h2>Allow Cookies</h2>
+            </div>
+            <div class="col-2 text-center">
+              <i class="fa fa-times"></i>
+            </div>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <button type="button" class="btn btn-danger w-100">Accept Cookies</button>
+        </div>
+      </div>
+    </div>-->
+
+
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #F49423;" role="navigation">
       <div class="container-fluid">
         <a class="navbar-brand" href="#home">
@@ -119,6 +167,9 @@
       <div class="divider vertical"></div>
         <div class="main-container">
             <h1>3D-LED-Buchstaben</h1>
+            <span>Wir fertigen 3D-LED-Buchstaben individuell und nach ihren Vorgaben in verschiedenen Ausführungen, Farben und Materialien an. Die Buchstaben werden auf LED Gerüsten montiert, welche dann mit Stahlprofilen an Ihre Geschäftsfront angebracht wird.</span>
+            <span>Lassen Sie ihr Geschäft strahlen und Eindruck erzeugen.</span>
+
         </div>
         <div class="divider"></div>
     </section>
@@ -126,6 +177,8 @@
     <section class="parallax-content main-content" id="poloshirts">
         <div class="main-container main-right">
             <h1>Poloshirts</h1>
+            <h2>inkl. Bestickung</h2>
+            <span>Drucken sie individuelle Beschriftungen und/oder Logos auf Poloshirts, für den professionellen Look.</span>
         </div>
         <div class="divider"></div>
     </section>
@@ -133,6 +186,8 @@
     <section class="parallax-content main-content" id="neon-flex">
         <div class="main-container">
             <h1>Neon-Flex</h1>
+            <span>Wir fertigen beleuchtete Neon LED Buchstaben oder Logos
+für den Innenbereich Ihres Hauses an.</span>
         </div>
         <div class="divider"></div>
     </section>
@@ -140,12 +195,15 @@
     <section class="parallax-content main-content" id="kfz-beschriftungen">
         <div class="main-container main-right">
             <h1>KFZ-Beschriftungen</h1>
+            <span>Lassen Sie sich Ihre eigene Beschriftung ihres Betriebes für Ihr Fahrzeug von uns erstellen und bekleben.</span>
         </div>
         <div class="divider"></div>
     </section>
         <section class="parallax-content main-content" id="led-ausleger">
         <div class="main-container">
             <h1>LED Ausleger</h1>
+            <span>Wir bieten ihnen LED Ausleger in verschiedenen Formen an; rechteckige, feste sowie runde Ausleger, mit einem motorisierten,
+selbstdrehenden Kugellagersystem.</span>
         </div>
         <div class="divider"></div>
     </section>
@@ -153,12 +211,14 @@
     <section class="parallax-content main-content" id="3d-wandlogos">
         <div class="main-container main-right">
             <h1>3D-Wandlogos</h1>
+            <span>Wir erstellen für sie, nach Ihren Vorstellungen, individuelle und qualitativ.hochwertige 3D Wandlogos in  verschiedenen Größen und Formen.</span>
         </div>
         <div class="divider"></div>
     </section>
         <section class="parallax-content main-content" id="rollup-systeme">
         <div class="main-container">
             <h1>Roll-Up-Systeme</h1>
+            <span>Für die Laser und Fräsbuchstaben in verschiedenen Größen und Arten verarbeiten wir Materialien, wie z.B. Alu, Aluverbund, Edelstahlblech, Plexiglas, Kunststoff, Holz u.a.</span>
         </div>
         <div class="divider"></div>
     </section>
@@ -166,6 +226,15 @@
     <section class="parallax-content main-content" id="textil-light-boxen">
         <div class="main-container main-right">
             <h1>Textil-Light-Boxen</h1>
+            <span>
+                &bull; Lichtbox mit LED-Modulen<br>
+                &bull; Inkl. individuellem Druck<br>
+                &bull; Perfekt als Kundenstopper<br>
+                &bull; Einfache und schnelle Montage.</span>
+              <span>
+                Unsere, mit LED-Modulen beleuchtete, Lightbox setzt ihre Werbung strahlend schön in den Fokus des Betrachters.
+
+</span>
         </div>
         <div class="divider"></div>
     </section>
@@ -245,7 +314,10 @@
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-    <script>
+    <script src="js/cookie-consent.js"></script>
+    <script type="text/javascript">
+        var cookieConsent = new CookieConsent({contentUrl: "cookie-consent-content", privacyPolicyUrl: "privacy-policy-mockup.html"})</script>
+    <!--<script>
       function openCity(cityName) {
         var i;
         var x = document.getElementsByClassName("city");
@@ -255,7 +327,7 @@
         document.getElementById(cityName).style.display = "block";
       }
 
-    </script>
+    </script>-->
     <script>
       $(document).ready(function() {
         // Add smooth scrolling to all links
@@ -281,7 +353,23 @@
           } // End if
         });
       });
+    </script>
+    <script type="text/javascript">
+      $(document).on('ready', function() {
+  if (document.cookie.indexOf("accepted_cookies=") < 0) {
+    $('.cookie-overlay').removeClass('d-none').addClass('d-block');
+  }
 
+  $('.accept-cookies').on('click', function() {
+    document.cookie = "accepted_cookies=yes;"
+    $('.cookie-overlay').removeClass('d-block').addClass('d-none');
+  })
+
+  // expand depending on your needs
+  $('.close-cookies').on('click', function() {
+    $('.cookie-overlay').removeClass('d-block').addClass('d-none');
+  })
+})
     </script>
   </body>
 </html>
