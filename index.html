@@ -1,160 +1,121 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>T&T Design</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/fontAwesome.css">
-    <link rel="stylesheet" href="css/cookie-consent.css"/>
-    <link rel="stylesheet" href="css/tt-main.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
-    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>T&T Design</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/fontAwesome.css">
+  <link rel="stylesheet" href="css/cookie-consent.css" />
+  <link rel="stylesheet" href="css/tt-main.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+  <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
 
-  <body>
-
-<!--Modal: modalCookie-->
-  <div class="modal fade top" id="modalCookie1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-       aria-hidden="true" data-backdrop="true">
-    <div class="modal-dialog modal-frame modal-top modal-notify modal-info" role="document">
-      <!--Content-->
-      <div class="modal-content">
-        <!--Body-->
-        <div class="modal-body">
-          <div class="row d-flex justify-content-center align-items-center">
-
-            <p class="pt-3 pr-2">We use cookies to improve your website experience</p>
-
-            <a type="button" class="btn btn-primary">Learn more
-              <i class="fas fa-book ml-1"></i>
-            </a>
-            <a type="button" class="btn btn-outline-primary waves-effect" data-dismiss="modal">Ok, thanks</a>
-          </div>
-        </div>
+<body>
+  <!-- NAVIGATIONSLEISTE -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #F49423;" role="navigation">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#home">
+        <img src="img/logo-notext.svg" class="d-inline-block align-top" alt="">
+        <span>T&T Design</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#services" data-toggle="collapse" data-target=".navbar-collapse">Services</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#kontakt" data-toggle="collapse" data-target=".navbar-collapse">Kontakt</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Shop</a>
+          </li>
+        </ul>
       </div>
-      <!--/.Content-->
     </div>
-  </div>
-  <!--Modal: modalCookie-->
+  </nav>
 
+  <!-- HEADER -->
 
-
-<!--<div class="row cookie-overlay">
-      <div class="col-md-4 col-sm-12 button-fixed">
-        <div class="p-3 pb-4 bg-custom text-white">
-          <div class="row">
-            <div class="col-10">
-              <h2>Allow Cookies</h2>
-            </div>
-            <div class="col-2 text-center">
-              <i class="fa fa-times"></i>
-            </div>
-          </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-          <button type="button" class="btn btn-danger w-100">Accept Cookies</button>
+  <header class="parallax-content" id="home">
+    <div class="banner-content">
+      <i id="logo"></i>
+    </div>
+    <div class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner vh-100">
+        <div class="carousel-item.active h-100" style="background:url('img/bannerimg1.jpg'); background-size:cover">
+        </div>
+        <div class="carousel-item h-100" style="background:url('img/bannerimg2.jpg'); background-size:cover">
+        </div>
+        <div class="carousel-item h-100" style="background:url('img/bannerimg3.jpg'); background-size:cover">
         </div>
       </div>
-    </div>-->
+    </div>
+  </header>
 
+  <main>
 
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #F49423;" role="navigation">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#home">
-          <img src="img/logo-notext.svg" class="d-inline-block align-top" alt="">
-          <span>T&T Design</span>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#services" data-toggle="collapse" data-target=".navbar-collapse">Services</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#kontakt" data-toggle="collapse" data-target=".navbar-collapse">Kontakt</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Shop</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <!-- SERVICE NAVIGATION -->
 
-    <header class="parallax-content" id="home">
-      <div class="banner-content">
-        <i id="logo"></i>
-      </div>
-      <div class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner vh-100">
-          <div class="carousel-item.active h-100" style="background:url('img/bannerimg1.jpg'); background-size:cover">
-          </div>
-          <div class="carousel-item h-100" style="background:url('img/bannerimg2.jpg'); background-size:cover">
-          </div>
-          <div class="carousel-item h-100" style="background:url('img/bannerimg3.jpg'); background-size:cover">
-          </div>
-        </div>
-      </div>
-    </header>
-<main>
     <div class="service-content" id="services">
       <div class="container">
         <div class="row">
           <div class="service-container">
             <a href="#3d-led-buchstaben">
-            <div class="service-item" id="buchstaben"></div>
-            <span class="service-desc">3D LED Buchstaben</span>
+              <div class="service-item" id="buchstaben"></div>
+              <span class="service-desc">3D LED Buchstaben</span>
             </a>
           </div>
           <div class="service-container">
             <a href="#poloshirts">
-            <div class="service-item" id="polo"></div>
-            <span class="service-desc">Poloshirts inkl. Bestickung</span>
+              <div class="service-item" id="polo"></div>
+              <span class="service-desc">Poloshirts inkl. Bestickung</span>
             </a>
           </div>
           <div class="service-container">
             <a href="#neon-flex">
-            <div class="service-item" id="neon"></div>
-            <span class="service-desc">Neon-Flex</span>
+              <div class="service-item" id="neon"></div>
+              <span class="service-desc">Neon-Flex</span>
             </a>
           </div>
           <div class="service-container">
             <a href="#kfz-beschriftungen">
-            <div class="service-item" id="kfz"></div>
-            <span class="service-desc">KFZ Beschriftungen</span>
+              <div class="service-item" id="kfz"></div>
+              <span class="service-desc">KFZ Beschriftungen</span>
             </a>
           </div>
 
           <div class="service-container">
             <a href="#led-ausleger">
-            <div class="service-item" id="ausleger"></div>
-            <span class="service-desc">LED Ausleger</span>
+              <div class="service-item" id="ausleger"></div>
+              <span class="service-desc">LED Ausleger</span>
             </a>
           </div>
           <div class="service-container">
             <a href="#3d-wandlogos">
-            <div class="service-item" id="wandlogo"></div>
-            <span class="service-desc">3D Wandlogos</span>
+              <div class="service-item" id="wandlogo"></div>
+              <span class="service-desc">3D Wandlogos</span>
             </a>
           </div>
           <div class="service-container">
             <a href="#rollup-systeme">
-            <div class="service-item" id="rollup"></div>
-            <span class="service-desc">Roll-Up Systeme</span>
+              <div class="service-item" id="rollup"></div>
+              <span class="service-desc">Roll-Up Systeme</span>
             </a>
           </div>
           <div class="service-container">
             <a href="#textil-light-boxen">
-            <div class="service-item" id="textil"></div>
-            <span class="service-desc">Textil Light-Boxen</span>
+              <div class="service-item" id="textil"></div>
+              <span class="service-desc">Textil Light-Boxen</span>
             </a>
           </div>
         </div>
@@ -165,81 +126,82 @@
 
     <section class="parallax-content main-content" id="3d-led-buchstaben">
       <div class="divider vertical"></div>
-        <div class="main-container">
-            <h1>3D-LED-Buchstaben</h1>
-            <span>Wir fertigen 3D-LED-Buchstaben individuell und nach ihren Vorgaben in verschiedenen Ausführungen, Farben und Materialien an. Die Buchstaben werden auf LED Gerüsten montiert, welche dann mit Stahlprofilen an Ihre Geschäftsfront angebracht wird.</span>
-            <span>Lassen Sie ihr Geschäft strahlen und Eindruck erzeugen.</span>
+      <div class="main-container">
+        <h1>3D-LED-Buchstaben</h1>
+        <span>Wir fertigen 3D-LED-Buchstaben individuell und nach ihren Vorgaben in verschiedenen Ausführungen, Farben und Materialien an. Die Buchstaben werden auf LED Gerüsten montiert, welche dann mit Stahlprofilen an Ihre Geschäftsfront angebracht wird.</span>
+        <span>Lassen Sie ihr Geschäft strahlen und Eindruck erzeugen.</span>
 
-        </div>
-        <div class="divider"></div>
+      </div>
+      <div class="divider"></div>
     </section>
 
     <section class="parallax-content main-content" id="poloshirts">
-        <div class="main-container main-right">
-            <h1>Poloshirts</h1>
-            <h2>inkl. Bestickung</h2>
-            <span>Drucken sie individuelle Beschriftungen und/oder Logos auf Poloshirts, für den professionellen Look.</span>
-        </div>
-        <div class="divider"></div>
+      <div class="main-container main-right">
+        <h1>Poloshirts</h1>
+        <h2>inkl. Bestickung</h2>
+        <span>Drucken sie individuelle Beschriftungen und/oder Logos auf Poloshirts, für den professionellen Look.</span>
+      </div>
+      <div class="divider"></div>
     </section>
 
     <section class="parallax-content main-content" id="neon-flex">
-        <div class="main-container">
-            <h1>Neon-Flex</h1>
-            <span>Wir fertigen beleuchtete Neon LED Buchstaben oder Logos
-für den Innenbereich Ihres Hauses an.</span>
-        </div>
-        <div class="divider"></div>
+      <div class="main-container">
+        <h1>Neon-Flex</h1>
+        <span>Wir fertigen beleuchtete Neon LED Buchstaben oder Logos
+          für den Innenbereich Ihres Hauses an.</span>
+      </div>
+      <div class="divider"></div>
     </section>
 
     <section class="parallax-content main-content" id="kfz-beschriftungen">
-        <div class="main-container main-right">
-            <h1>KFZ-Beschriftungen</h1>
-            <span>Lassen Sie sich Ihre eigene Beschriftung ihres Betriebes für Ihr Fahrzeug von uns erstellen und bekleben.</span>
-        </div>
-        <div class="divider"></div>
+      <div class="main-container main-right">
+        <h1>KFZ-Beschriftungen</h1>
+        <span>Lassen Sie sich Ihre eigene Beschriftung ihres Betriebes für Ihr Fahrzeug von uns erstellen und bekleben.</span>
+      </div>
+      <div class="divider"></div>
     </section>
-        <section class="parallax-content main-content" id="led-ausleger">
-        <div class="main-container">
-            <h1>LED Ausleger</h1>
-            <span>Wir bieten ihnen LED Ausleger in verschiedenen Formen an; rechteckige, feste sowie runde Ausleger, mit einem motorisierten,
-selbstdrehenden Kugellagersystem.</span>
-        </div>
-        <div class="divider"></div>
+    <section class="parallax-content main-content" id="led-ausleger">
+      <div class="main-container">
+        <h1>LED Ausleger</h1>
+        <span>Wir bieten ihnen LED Ausleger in verschiedenen Formen an; rechteckige, feste sowie runde Ausleger, mit einem motorisierten,
+          selbstdrehenden Kugellagersystem.</span>
+      </div>
+      <div class="divider"></div>
     </section>
 
     <section class="parallax-content main-content" id="3d-wandlogos">
-        <div class="main-container main-right">
-            <h1>3D-Wandlogos</h1>
-            <span>Wir erstellen für sie, nach Ihren Vorstellungen, individuelle und qualitativ.hochwertige 3D Wandlogos in  verschiedenen Größen und Formen.</span>
-        </div>
-        <div class="divider"></div>
+      <div class="main-container main-right">
+        <h1>3D-Wandlogos</h1>
+        <span>Wir erstellen für sie, nach Ihren Vorstellungen, individuelle und qualitativ.hochwertige 3D Wandlogos in verschiedenen Größen und Formen.</span>
+      </div>
+      <div class="divider"></div>
     </section>
-        <section class="parallax-content main-content" id="rollup-systeme">
-        <div class="main-container">
-            <h1>Roll-Up-Systeme</h1>
-            <span>Für die Laser und Fräsbuchstaben in verschiedenen Größen und Arten verarbeiten wir Materialien, wie z.B. Alu, Aluverbund, Edelstahlblech, Plexiglas, Kunststoff, Holz u.a.</span>
-        </div>
-        <div class="divider"></div>
+    <section class="parallax-content main-content" id="rollup-systeme">
+      <div class="main-container">
+        <h1>Roll-Up-Systeme</h1>
+        <span>Für die Laser und Fräsbuchstaben in verschiedenen Größen und Arten verarbeiten wir Materialien, wie z.B. Alu, Aluverbund, Edelstahlblech, Plexiglas, Kunststoff, Holz u.a.</span>
+      </div>
+      <div class="divider"></div>
     </section>
 
     <section class="parallax-content main-content" id="textil-light-boxen">
-        <div class="main-container main-right">
-            <h1>Textil-Light-Boxen</h1>
-            <span>
-                &bull; Lichtbox mit LED-Modulen<br>
-                &bull; Inkl. individuellem Druck<br>
-                &bull; Perfekt als Kundenstopper<br>
-                &bull; Einfache und schnelle Montage.</span>
-              <span>
-                Unsere, mit LED-Modulen beleuchtete, Lightbox setzt ihre Werbung strahlend schön in den Fokus des Betrachters.
+      <div class="main-container main-right">
+        <h1>Textil-Light-Boxen</h1>
+        <span>
+          &bull; Lichtbox mit LED-Modulen<br>
+          &bull; Inkl. individuellem Druck<br>
+          &bull; Perfekt als Kundenstopper<br>
+          &bull; Einfache und schnelle Montage.</span>
+        <span>
+          Unsere, mit LED-Modulen beleuchtete, Lightbox setzt ihre Werbung strahlend schön in den Fokus des Betrachters.
 
-</span>
-        </div>
-        <div class="divider"></div>
+        </span>
+      </div>
+      <div class="divider"></div>
     </section>
 
     <!-- KONTAKT -->
+
     <div class="parallax-content contact-content" id="kontakt">
       <div class="container">
         <div class="row">
@@ -275,101 +237,54 @@ selbstdrehenden Kugellagersystem.</span>
           </div>
           <div class="col-md-6">
             <div class="map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2370.36955052078!2d10.040871915167942!3d53.55117026705131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b18eeec587e695%3A0x5a0a7214b8744ec9!2sT%26T%20Design!5e0!3m2!1sen!2sde!4v1661938229196!5m2!1sen!2sde" width="100%" height="390" frameborder="0" style="border:0" allowfullscreen></iframe>
+              <iframe src="https://maps.googleapis.com/maps/embed?pb=!1m18!1m12!1m3!1d2370.36955052078!2d10.040871915167942!3d53.55117026705131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b18eeec587e695%3A0x5a0a7214b8744ec9!2sT%26T%20Design!5e0!3m2!1sen!2sde!4v1661938229196!5m2!1sen!2sde" width="100%" height="390" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
           </div>
         </div>
       </div>
     </div>
-</main>    
-    <footer>
-      <div class="container">
-        <div class="row">
+  </main>
+
+  <!-- FOOTER -->
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="primary-button">
+            <a href="#home">Back To Top</a>
+          </div>
+          <ul>
+            <li><a href="https://www.instagram.com/tt.design.hamburg/" target="_blank" class="social-link"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="#" class="social-link"><i class="fa fa-google"></i></a></li>
+            <li><a href="#" class="social-link"><i class="fa fa-dribbble"></i></a></li>
+          </ul>
           <div class="col-md-12">
-            <div class="primary-button">
-              <a href="#home">Back To Top</a>
-            </div>
-            <ul>
-              <li><a href="https://www.instagram.com/tt.design.hamburg/" target="_blank" class="social-link"><i class="fa fa-instagram"></i></a></li>
-              <li><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
-              <li><a href="#" class="social-link"><i class="fa fa-google"></i></a></li>
-              <li><a href="#" class="social-link"><i class="fa fa-dribbble"></i></a></li>
-            </ul>
-            <div class="col-md-12">
-              <p>Copyright &copy; 2022 T&T Design</p>
-              <p>Wendenstr. 329 &bull; 20537 Hamburg<br>
-                Tel.: 040/23166777 &bull; Fax: 040/23166779<br>
-                info@tt-design.de</p>
-            </div>
+            <p>Copyright &copy; 2022 T&T Design</p>
+            <p>Wendenstr. 329 &bull; 20537 Hamburg<br>
+              Tel.: 040/23166777 &bull; Fax: 040/23166779<br>
+              info@tt-design.de</p>
           </div>
         </div>
       </div>
-    </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script>
-      window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
+    </div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
+  </script>
+  <script src="js/vendor/bootstrap.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/cookie-consent.js"></script>
+  <script type="text/javascript">
+    var cookieConsent = new CookieConsent({
+      contentUrl: "cookie-consent-content",
+      privacyPolicyUrl: "datenschutz.html"
+    })
+  </script>
+</body>
 
-    </script>
-    <script src="js/vendor/bootstrap.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/cookie-consent.js"></script>
-    <script type="text/javascript">
-        var cookieConsent = new CookieConsent({contentUrl: "cookie-consent-content", privacyPolicyUrl: "privacy-policy-mockup.html"})</script>
-    <!--<script>
-      function openCity(cityName) {
-        var i;
-        var x = document.getElementsByClassName("city");
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
-        }
-        document.getElementById(cityName).style.display = "block";
-      }
-
-    </script>-->
-    <script>
-      $(document).ready(function() {
-        // Add smooth scrolling to all links
-        $(".navbar a, .service-content a, .primary-button a").on('click', function(event) {
-
-          // Make sure this.hash has a value before overriding default behavior
-          if (this.hash !== "") {
-            // Prevent default anchor click behavior
-            event.preventDefault();
-
-            // Store hash
-            var hash = this.hash;
-
-            // Using jQuery's animate() method to add smooth page scroll
-            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-            $('html, body').animate({
-              scrollTop: $(hash).offset().top
-            }, 800, function() {
-
-              // Add hash (#) to URL when done scrolling (default click behavior)
-              window.location.hash = hash;
-            });
-          } // End if
-        });
-      });
-    </script>
-    <script type="text/javascript">
-      $(document).on('ready', function() {
-  if (document.cookie.indexOf("accepted_cookies=") < 0) {
-    $('.cookie-overlay').removeClass('d-none').addClass('d-block');
-  }
-
-  $('.accept-cookies').on('click', function() {
-    document.cookie = "accepted_cookies=yes;"
-    $('.cookie-overlay').removeClass('d-block').addClass('d-none');
-  })
-
-  // expand depending on your needs
-  $('.close-cookies').on('click', function() {
-    $('.cookie-overlay').removeClass('d-block').addClass('d-none');
-  })
-})
-    </script>
-  </body>
 </html>
