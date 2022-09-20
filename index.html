@@ -15,6 +15,10 @@
   <link rel="stylesheet" href="css/tt-main.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
   <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+  <script src="js/2ClickIframePrivacy.js"></script>
+  <script type="text/javascript">
+document.addEventListener('DOMContentLoaded', _2ClickIframePrivacy.init(''));
+</script>
 </head>
 
 <body>
@@ -237,7 +241,7 @@
           </div>
           <div class="col-md-6">
             <div class="map">
-              <iframe src="https://maps.googleapis.com/maps/embed?pb=!1m18!1m12!1m3!1d2370.36955052078!2d10.040871915167942!3d53.55117026705131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b18eeec587e695%3A0x5a0a7214b8744ec9!2sT%26T%20Design!5e0!3m2!1sen!2sde!4v1661938229196!5m2!1sen!2sde" width="100%" height="390" frameborder="0" style="border:0" allowfullscreen></iframe>
+              
             </div>
           </div>
         </div>
@@ -286,6 +290,30 @@
     })
   </script>
   <script src="js/tracking.js"></script>
+  <script type="text/javascript">$(document).ready(function() {
+        // Smooth Scrolling für alle links
+        $(".navbar a, .service-content a, .primary-button a").on('click', function(event) {
+
+          // Sicherstellen dass dieser Hash einen Wert hat, bevor der Standardwert überschrieben wird
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Hash largern
+            var hash = this.hash;
+
+            // JQuery's animate() benutzen um Smooth Page Scroll hinzuzufügen
+            // Die optionale Zahl 800 ist die Zeit in Millisekunden, dies dauert das Ziel zu erreichen
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 800, function() {
+
+              // Hash (#) hinzufügen, wenn das scrolling vollendet ist (Standardverhalten)
+              window.location.hash = hash;
+            });
+          } // End if
+        });
+      });</script>
 </body>
 
 </html>
