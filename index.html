@@ -19,10 +19,10 @@
 
 <body>
   <!-- NAVIGATIONSLEISTE -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #F49423;" role="navigation">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #F49423;" role="navigation" id="navbar">
     <div class="container-fluid">
       <a class="navbar-brand" href="#home">
-        <img src="img/logo-notext.svg" class="d-inline-block align-top" alt="">
+        <img src="img/logo-notext.svg" class="d-inline-block align-top"  alt="">
         <span>T&T Design</span>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,11 +46,11 @@
 
   <!-- HEADER -->
 
-  <header class="parallax-content" id="home">
+  <header class="parallax-window" data-parallax="scroll" data-image-src="img/bannerimg1.jpg" id="home">
     <div class="banner-content">
       <i id="logo"></i>
     </div>
-    <div class="carousel slide" data-ride="carousel">
+    <!-- <div class="carousel slide" data-ride="carousel">
       <div class="carousel-inner vh-100">
         <div class="carousel-item.active h-100" style="background:url('img/bannerimg1.jpg'); background-size:cover">
         </div>
@@ -59,14 +59,14 @@
         <div class="carousel-item h-100" style="background:url('img/bannerimg3.jpg'); background-size:cover">
         </div>
       </div>
-    </div>
+    </div>-->
   </header>
 
   <main>
 
     <!-- SERVICE NAVIGATION -->
 
-    <div class="service-content" id="services">
+    <div class="service-content parallax-window" data-parallax="scroll" data-image-src="img/2nd-section.jpg" id="services">
       <div class="container">
         <div class="row">
           <div class="service-container">
@@ -124,67 +124,213 @@
 
     <!-- CONTENT -->
 
-    <section class="parallax-content main-content" id="3d-led-buchstaben">
-      <div class="divider vertical"></div>
+    <section class="main-content" id="3d-led-buchstaben">
       <div class="main-container">
         <h1>3D-LED-Buchstaben</h1>
         <span>Wir fertigen 3D-LED-Buchstaben individuell und nach ihren Vorgaben in verschiedenen Ausführungen, Farben und Materialien an. Die Buchstaben werden auf LED Gerüsten montiert, welche dann mit Stahlprofilen an Ihre Geschäftsfront angebracht wird.</span>
         <span>Lassen Sie ihr Geschäft strahlen und Eindruck erzeugen.</span>
-
       </div>
-      <div class="divider"></div>
+      <div class="slider-right">
+        <div id="led-slider" class="carousel slide" data-ride="carousel" data-interval="false">
+          <ol class="carousel-indicators">
+            <li data-target="#led-slider" data-slide-to="0" class="active"></li>
+            <li data-target="#led-slider" data-slide-to="1"></li>
+            <li data-target="#led-slider" data-slide-to="2"></li>
+          </ol>
+          <a class="carousel-click-next" role="button" href="#led-slider" data-slide="next">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/buchstaben.png" class="img-fluid h-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/3dled2.jpg" class="img-fluid h-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/3dled3.jpg" class="img-fluid h-100" alt="...">
+            </div>
+          </div>
+          </a>
+        </div>
+      </div>
     </section>
 
-    <section class="parallax-content main-content" id="poloshirts">
+    <section class="main-content" id="poloshirts">
       <div class="main-container main-right">
         <h1>Poloshirts</h1>
         <h2>inkl. Bestickung</h2>
         <span>Drucken sie individuelle Beschriftungen und/oder Logos auf Poloshirts, für den professionellen Look.</span>
       </div>
-      <div class="divider"></div>
+      <div class="slider-left">
+        <div id="polo-slider" class="carousel slide" data-ride="carousel" data-interval="false">
+          <ol class="carousel-indicators">
+            <li data-target="#polo-slider" data-slide-to="0" class="active"></li>
+            <li data-target="#polo-slider" data-slide-to="1"></li>
+            <li data-target="#polo-slider" data-slide-to="2"></li>
+          </ol>
+          <a class="carousel-click-next" role="button" href="#polo-slider" data-slide="next">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/buchstaben.png" class="img-fluid h-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/3dled2.jpg" class="img-fluid h-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/3dled3.jpg" class="img-fluid h-100" alt="...">
+            </div>
+          </div>
+          </a>
+        </div>
+      </div>
     </section>
 
-    <section class="parallax-content main-content" id="neon-flex">
+    <section class="main-content" id="neon-flex">
       <div class="main-container">
         <h1>Neon-Flex</h1>
         <span>Wir fertigen beleuchtete Neon LED Buchstaben oder Logos
           für den Innenbereich Ihres Hauses an.</span>
       </div>
-      <div class="divider"></div>
+
+      <div class="slider-right">
+        <div id="neon-slider" class="carousel slide" data-ride="carousel" data-interval="false">
+          <ol class="carousel-indicators">
+            <li data-target="#neon-slider" data-slide-to="0" class="active"></li>
+            <li data-target="#neon-slider" data-slide-to="1"></li>
+            <li data-target="#neon-slider" data-slide-to="2"></li>
+          </ol>
+          <a class="carousel-click-next" role="button" href="#neon-slider" data-slide="next">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/buchstaben.png" class="img-fluid h-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/3dled2.jpg" class="img-fluid h-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/3dled3.jpg" class="img-fluid h-100" alt="...">
+            </div>
+          </div>
+          </a>
+      </div>
     </section>
 
-    <section class="parallax-content main-content" id="kfz-beschriftungen">
+    <section class="main-content" id="kfz-beschriftungen">
       <div class="main-container main-right">
         <h1>KFZ-Beschriftungen</h1>
         <span>Lassen Sie sich Ihre eigene Beschriftung ihres Betriebes für Ihr Fahrzeug von uns erstellen und bekleben.</span>
       </div>
-      <div class="divider"></div>
+
+      <div class="slider-left">
+        <div id="kfz-slider" class="carousel slide" data-ride="carousel" data-interval="false">
+          <ol class="carousel-indicators">
+            <li data-target="#kfz-slider" data-slide-to="0" class="active"></li>
+            <li data-target="#kfz-slider" data-slide-to="1"></li>
+            <li data-target="#kfz-slider" data-slide-to="2"></li>
+          </ol>
+          <a class="carousel-click-next" role="button" href="#kfz-slider" data-slide="next">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/buchstaben.png" class="img-fluid h-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/3dled2.jpg" class="img-fluid h-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/3dled3.jpg" class="img-fluid h-100" alt="...">
+            </div>
+          </div>
+          </a>
+      </div>
     </section>
-    <section class="parallax-content main-content" id="led-ausleger">
+    <section class="main-content" id="led-ausleger">
       <div class="main-container">
         <h1>LED Ausleger</h1>
         <span>Wir bieten ihnen LED Ausleger in verschiedenen Formen an; rechteckige, feste sowie runde Ausleger, mit einem motorisierten,
           selbstdrehenden Kugellagersystem.</span>
       </div>
-      <div class="divider"></div>
+      <div class="slider-right">
+        <div id="ausleger-slider" class="carousel slide" data-ride="carousel" data-interval="false">
+          <ol class="carousel-indicators">
+            <li data-target="#ausleger-slider" data-slide-to="0" class="active"></li>
+            <li data-target="#ausleger-slider" data-slide-to="1"></li>
+            <li data-target="#ausleger-slider" data-slide-to="2"></li>
+          </ol>
+          <a class="carousel-click-next" role="button" href="#ausleger-slider" data-slide="next">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/buchstaben.png" class="img-fluid h-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/3dled2.jpg" class="img-fluid h-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/3dled3.jpg" class="img-fluid h-100" alt="...">
+            </div>
+          </div>
+          </a>
+      </div>
+      </div>
     </section>
 
-    <section class="parallax-content main-content" id="3d-wandlogos">
+    <section class="main-content" id="3d-wandlogos">
       <div class="main-container main-right">
         <h1>3D-Wandlogos</h1>
         <span>Wir erstellen für sie, nach Ihren Vorstellungen, individuelle und qualitativ.hochwertige 3D Wandlogos in verschiedenen Größen und Formen.</span>
       </div>
-      <div class="divider"></div>
+      <div class="slider-left">
+        <div id="wand-slider" class="carousel slide" data-ride="carousel" data-interval="false">
+          <ol class="carousel-indicators">
+            <li data-target="#wand-slider" data-slide-to="0" class="active"></li>
+            <li data-target="#wand-slider" data-slide-to="1"></li>
+            <li data-target="#wand-slider" data-slide-to="2"></li>
+          </ol>
+          <a class="carousel-click-next" role="button" href="#wand-slider" data-slide="next">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/buchstaben.png" class="img-fluid h-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/3dled2.jpg" class="img-fluid h-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/3dled3.jpg" class="img-fluid h-100" alt="...">
+            </div>
+          </div>
+          </a>
+      </div>
+      </div>
     </section>
-    <section class="parallax-content main-content" id="rollup-systeme">
+
+    <section class="main-content" id="rollup-systeme">
       <div class="main-container">
         <h1>Roll-Up-Systeme</h1>
         <span>Für die Laser und Fräsbuchstaben in verschiedenen Größen und Arten verarbeiten wir Materialien, wie z.B. Alu, Aluverbund, Edelstahlblech, Plexiglas, Kunststoff, Holz u.a.</span>
       </div>
-      <div class="divider"></div>
+      <div class="slider-right">
+        <div id="rollup-slider" class="carousel slide" data-ride="carousel" data-interval="false">
+          <ol class="carousel-indicators">
+            <li data-target="#rollup-slider" data-slide-to="0" class="active"></li>
+            <li data-target="#rollup-slider" data-slide-to="1"></li>
+            <li data-target="#rollup-slider" data-slide-to="2"></li>
+          </ol>
+          <a class="carousel-click-next" role="button" href="#rollup-slider" data-slide="next">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/buchstaben.png" class="img-fluid h-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/3dled2.jpg" class="img-fluid h-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/3dled3.jpg" class="img-fluid h-100" alt="...">
+            </div>
+          </div>
+          </a>
+      </div>
+      </div>
     </section>
 
-    <section class="parallax-content main-content" id="textil-light-boxen">
+    <section class="main-content" id="textil-light-boxen">
       <div class="main-container main-right">
         <h1>Textil-Light-Boxen</h1>
         <span>
@@ -194,15 +340,35 @@
           &bull; Einfache und schnelle Montage.</span>
         <span>
           Unsere, mit LED-Modulen beleuchtete, Lightbox setzt ihre Werbung strahlend schön in den Fokus des Betrachters.
-
         </span>
       </div>
-      <div class="divider"></div>
+      <div class="slider-left">
+        <div id="textil-slider" class="carousel slide" data-ride="carousel" data-interval="false">
+          <ol class="carousel-indicators">
+            <li data-target="#textil-slider" data-slide-to="0" class="active"></li>
+            <li data-target="#textil-slider" data-slide-to="1"></li>
+            <li data-target="#textil-slider" data-slide-to="2"></li>
+          </ol>
+          <a class="carousel-click-next" role="button" href="#textil-slider" data-slide="next">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/buchstaben.png" class="img-fluid h-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/3dled2.jpg" class="img-fluid h-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/3dled3.jpg" class="img-fluid h-100" alt="...">
+            </div>
+          </div>
+          </a>
+      </div>
+      </div>
     </section>
 
     <!-- KONTAKT -->
 
-    <div class="parallax-content contact-content" id="kontakt">
+    <div class="contact-content parallax-window" data-parallax="scroll" data-image-src="img/shoppic.jpg"  id="kontakt">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
@@ -237,7 +403,7 @@
           </div>
           <div class="col-md-6">
             <div class="map">
-              
+
             </div>
           </div>
         </div>
@@ -261,11 +427,18 @@
             <li><a href="#" class="social-link"><i class="fa fa-google"></i></a></li>
             <li><a href="#" class="social-link"><i class="fa fa-dribbble"></i></a></li>
           </ul>
+
+          <!--<p>Impressum<br>
+              Wendenstr. 329 &bull; 20537 Hamburg<br>
+              Tel.: 040/23166777 &bull; Fax: 040/23166779<br>
+              Email: <a href="mailto:info@tt-design.de">info@tt-design.de</a></p>
+          </div>-->
+          <div class="col-md-12" id="tmg">
+            <a data-toggle="modal" data-target="#Impressum">Impressum</a>
+            <a href="TT-AGB.pdf" target="_blank">AGB</a>
+          </div>
           <div class="col-md-12">
             <p>Copyright &copy; 2022 T&T Design</p>
-            <p>Wendenstr. 329 &bull; 20537 Hamburg<br>
-              Tel.: 040/23166777 &bull; Fax: 040/23166779<br>
-              info@tt-design.de</p>
           </div>
         </div>
       </div>
@@ -278,6 +451,7 @@
   <script src="js/vendor/bootstrap.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/parallax.js"></script>
   <script src="js/cookie-consent.js"></script>
   <script type="text/javascript">
     var cookieConsent = new CookieConsent({
@@ -288,35 +462,45 @@
   <!--<script src="js/tracking.js"></script>-->
   <script type="text/javascript">
     if (cookieConsent.trackingAllowed()) {
-    // vvv Google Analytics oder andere Tracking Codes hier einfügen vvv
-document.getElementByClass('map').innerHTML= '<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2370.3696126356713!2d10.04164141394564!3d53.55116915813242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5a0a7214b8744ec9!2sT%26T%20Design!5e0!3m2!1sen!2sde!4v1663669688707!5m2!1sen!2sde\" width=\"100%\" height=\"390\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>';
-    //
-}
+      // vvv Google Analytics oder andere Tracking Codes hier einfügen vvv
+      document.getElementByClass('map').innerHTML = '<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2370.3696126356713!2d10.04164141394564!3d53.55116915813242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5a0a7214b8744ec9!2sT%26T%20Design!5e0!3m2!1sen!2sde!4v1663669688707!5m2!1sen!2sde\" width=\"100%\" height=\"390\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>';
+      //
+    }
   </script>
-  <script type="text/javascript">$(document).ready(function() {
-        // Smooth Scrolling für alle links
-        $(".navbar a, .service-content a, .primary-button a").on('click', function(event) {
-
-          // Sicherstellen dass dieser Hash einen Wert hat, bevor der Standardwert überschrieben wird
-          if (this.hash !== "") {
-            // Prevent default anchor click behavior
-            event.preventDefault();
-
-            // Hash largern
-            var hash = this.hash;
-
-            // JQuery's animate() benutzen um Smooth Page Scroll hinzuzufügen
-            // Die optionale Zahl 800 ist die Zeit in Millisekunden, dies dauert das Ziel zu erreichen
-            $('html, body').animate({
-              scrollTop: $(hash).offset().top
-            }, 800, function() {
-
-              // Hash (#) hinzufügen, wenn das scrolling vollendet ist (Standardverhalten)
-              window.location.hash = hash;
-            });
-          } // End if
-        });
-      });</script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      // Smooth Scrolling für alle links
+      $(".navbar a, .service-content a, .primary-button a").on('click', function(event) {
+        // Sicherstellen dass dieser Hash einen Wert hat, bevor der Standardwert überschrieben wird
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+          // Hash largern
+          var hash = this.hash;
+          // JQuery's animate() benutzen um Smooth Page Scroll hinzuzufügen
+          // Die optionale Zahl 800 ist die Zeit in Millisekunden, dies dauert das Ziel zu erreichen
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function() {
+            // Hash (#) hinzufügen, wenn das scrolling vollendet ist (Standardverhalten)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+  </script>
+<script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-65px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
 </body>
 
 </html>
