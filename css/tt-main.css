@@ -25,19 +25,23 @@ body {
   font-size: 1.25em;
 }
 
-a {
-  color: #3CC;
+button a {
+  color: inherit;
+  text-decoration: none;
 }
 
-a:hover {
-  color: #FF0;
+button a:hover {
+  color: #242529;
+  text-decoration: none;
 }
 
 
 /*----------
   MAIN
 ----------*/
-
+#navbar {
+  transition: top .5s ease ;
+}
 .navbar-brand{
   display: inline-flex;
   align-items: center;
@@ -65,12 +69,20 @@ padding-left: .5em;
   letter-spacing: 0.5px;
 }
 
+.primary-button a:hover {
+  color: #242529;
+}
 
 .parallax-content {
   width: 100%;
   min-height: 100vh;
 }
 
+.parallax-window {
+  min-height: 100vh;
+  width: 100%;
+  background: transparent;
+}
 
 #logo {
   width: 100%;
@@ -101,6 +113,8 @@ padding-left: .5em;
   background-attachment: fixed;
   min-height: 100vh;
   background-position: center center;
+  border: 0.5em #F49423;
+  border-bottom-style: solid;
 }
 .service-content .container {
   max-width: none;
@@ -184,6 +198,9 @@ padding-left: .5em;
   color: #fff;
   /*background-image: url(../img/3rd-section.jpg);*/
   overflow: hidden;
+  border: 0.5em #F49423;
+  border-bottom-style: solid;
+
   }
 
 .main-content h1 {
@@ -202,21 +219,51 @@ padding-left: .5em;
 }
 
 .main-container {
-  position: relative;
+  position: absolute;
+  z-index: 1;
   background-color: #242529;
   float: left;
-  width: 50%;
+  width: 40%;
   height: 100vh;
   padding-top: 12vh;
   padding-left: 10vh;
   padding: 12vh 5vh 0 10vh;
-
+  border: 0.5em #F49423;
+  border-right-style: solid;
+  
 }
 
 .main-right {
   position: relative;
   background-color: #242529;
-  float: right;  
+  float: right;
+  border-left-style: solid;
+  border-right-style: none;  
+}
+
+.slider-right {
+  float: right;
+  width: 61%;
+  height: 100vh;
+  background-color: #242529;
+}
+
+.slider-left {
+  position: absolute;
+ float: left;
+  width: 61% ;
+  height: 100vh;
+  background-color: #242529;
+}
+.carousel-inner, .carousel-item {
+  height: 100vh !important;
+}
+.carousel-indicators li {
+  background-color: #F49423;
+}
+.carousel-click-next {
+  width: 100%;
+  height: 100%;
 }
 
 .divider {
@@ -250,7 +297,7 @@ padding-left: .5em;
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 16vh;
-  background-image: url(../img/shoppic.jpg);
+  
 }
 
 .contact-form {
@@ -301,21 +348,10 @@ padding-left: .5em;
   text-decoration: none;
   letter-spacing: 0.5px;
 }
-
-div.privacy-msg p {
-    width:200px;
-    border: 1px solid black;
-    padding: 5px;
-    text-align:center;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    -webkit-box-shadow: 0 10px 6px -6px #777;
-       -moz-box-shadow: 0 10px 6px -6px #777;
-            box-shadow: 0 10px 6px -6px #777;
+#contact button:hover {
+  color: #242529;
 }
+
 
 .map {
   margin-bottom: 30px;
@@ -375,12 +411,44 @@ footer p {
   margin-bottom: 0px;
 }
 
+
+footer span {
+  color: #fff;
+  font-size: 1.25em;
+}
+
 footer em {
   color: #ff8e43;
   font-weight: 600;
   font-style: normal;
 }
+footer .secondary-button {
+  
+}
+#tmg {
+  display: inline-flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin-top: 1.5em;
 
+}
+#tmg a {
+  margin-right: 2em;
+  margin-left: 1em;
+  background-color: none;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-size: 11px;
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+}
+#tmg a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
 @media (min-resolution: 125dpi) {
 
 body {
