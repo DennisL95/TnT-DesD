@@ -11,7 +11,6 @@
   <link rel="icon" type="image/png" href="img/favicon.png">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/fontAwesome.css">
-  <link rel="stylesheet" href="css/cookie-consent.css" />
   <link rel="stylesheet" href="css/tt-main.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
   <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
@@ -381,6 +380,7 @@
                     <div class="col-md-12">
                       <fieldset>
                         <input name="name" type="text" class="form-control" id="name" placeholder="Ihr Name..." required="">
+
                       </fieldset>
                     </div>
                     <div class="col-md-12">
@@ -394,8 +394,9 @@
                       </fieldset>
                     </div>
                     <div class="col-md-12">
-                      <fieldset>
+                      <fieldset class="button-area">
                         <button type="submit" id="form-submit" class="btn">Send Message</button>
+                        <span></span>
                       </fieldset>
                     </div>
                   </div>
@@ -403,9 +404,19 @@
               </div>
             </div>
           </div>
+          <script src="js/contactscript.js"></script>
           <div class="col-md-6">
-            <div class="map" >
-<iframe id="map" src="" width="100%" height="390" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <div class="map">
+  <section id="loadmap">
+  <div class="d-flex flex-column align-items-center justify-content-center">
+    <div class="spinner-border text-light m-2" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+
+<strong class="text-light">Google Maps benötigt Tracking Cookies.</strong><a href="#loadmap" id="open_preferences_center"></a>
+  </div> 
+  </section>           
+<iframe id="map" src="" width="100%" height="390" frameborder="0" style="display:none" allowfullscreen></iframe>
 
             </div>
           </div>
@@ -415,7 +426,31 @@
   </main>
 
   <!-- FOOTER -->
-
+  <!-- IMPRESSUM MODAL -->
+<div class="modal fade modalcolor" id="impressum" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="impressum-title">Angaben gem. § 5 TMG</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h6>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:</h6>
+<p>Tarkan Tarbasar<br>
+Wendenstr. 329, 20537 Hamburg<br>
+Tel. +49 40 231 66 777<br>
+E-Mail: <a href="mailto:info@tt-design.de">info@tt-design.de</a><br>
+USt.Id-Nr. DE254527368<br>
+</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
   <footer>
     <div class="container">
       <div class="row">
@@ -431,13 +466,8 @@
             <li><a href="#" class="social-link"><i class="fa fa-dribbble"></i></a></li>
           </ul>
 
-          <!--<p>Impressum<br>
-              Wendenstr. 329 &bull; 20537 Hamburg<br>
-              Tel.: 040/23166777 &bull; Fax: 040/23166779<br>
-              Email: <a href="mailto:info@tt-design.de">info@tt-design.de</a></p>
-          </div>-->
           <div class="col-md-12" id="tmg">
-            <a data-toggle="modal" data-target="#Impressum">Impressum</a>
+            <a data-toggle="modal" data-target="#impressum" style="cursor: pointer;">Impressum</a>
             <a href="TT-AGB.pdf" target="_blank">AGB</a>
           </div>
           <div class="col-md-12">
@@ -452,17 +482,34 @@
     window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
   </script>
   <script src="js/vendor/bootstrap.min.js"></script>
+ <!-- Cookie Consent by TermsFeed https://www.TermsFeed.com -->
+<script type="text/javascript" src="https://www.termsfeed.com/public/cookie-consent/4.0.0/cookie-consent.js" charset="UTF-8"></script>
+<script type="text/javascript" charset="UTF-8">
+document.addEventListener('DOMContentLoaded', function () {
+cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palette":"dark","language":"de","page_load_consent_levels":["strictly-necessary"],"notice_banner_reject_button_hide":false,"preferences_center_close_button_hide":false,"page_refresh_confirmation_buttons":false,"website_privacy_policy_url":"https://example.com/privacy-policy","website_name":"T&T Design"});
+});
+</script>
+
+<!-- tracking -->
+<script type="text/plain" cookie-consent="tracking" src="js/tracking.js"></script>
+<script type="text/plain" cookie-consent="tracking" src="js/map.js"></script>
+<!-- end of tracking-->
+
+<noscript>Free cookie consent management tool by <a href="https://www.termsfeed.com/" rel="nofollow noopener">TermsFeed Policy Generator</a></noscript>
+<!-- End Cookie Consent by TermsFeed https://www.TermsFeed.com -->
+
+
+
+
+
+<!-- Below is the link that users can use to open Preferences Center to change their preferences. Do not modify the ID parameter. Place it where appropriate, style it as needed. -->
+
+<a href="#" id="open_preferences_center">Update cookies preferences</a>
+
+
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
   
-  <script src="js/cookie-consent.js" defer></script>
-  <script type="text/javascript">
-    var cookieConsent = new CookieConsent({
-      contentUrl: "cookie-consent-content",
-      privacyPolicyUrl: "datenschutz.html"
-    })
-  </script>
-  <script src="js/tracking.js" defer></script>
   <script type="text/javascript">
     $(document).ready(function() {
       // Smooth Scrolling für alle links
