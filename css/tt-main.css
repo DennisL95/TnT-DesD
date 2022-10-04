@@ -13,6 +13,7 @@ Created by Dennis Linnemann
 - ?Fixiertes Scrolling für Main Content Bereich ?
 
 */
+
 p {
   font-size: 15px;
   line-height: 25px;
@@ -55,7 +56,39 @@ button a:hover {
 font-size: 1.25em;
 padding-left: .5em;
 }
+.termsfeed-com---palette-dark.termsfeed-com---nb {
+  background-color: #242529 !important; 
+}
 
+.termsfeed-com---palette-dark .cc-nb-okagree {
+  color: #fff !important;
+  background-color: #F49423 !important;
+  border-color: #fff;
+}
+
+.termsfeed-com---palette-dark .cc-nb-reject {
+  color: #f4f4f4!important;
+    background-color: #b67a35 !important;
+    border-color: #fff !important;
+}
+
+.termsfeed-com---palette-dark .cc-cp-foot-save {
+    background: #F49423 !important;
+    color: #fff !important;
+}
+.termsfeed-com---palette-dark .cc-nb-okagree:focus,
+.termsfeed-com---palette-dark .cc-nb-reject:focus,
+.termsfeed-com---palette-dark .cc-cp-foot-save:focus
+ {
+    box-shadow: 0 0 0 2px #fff !important;
+}
+.termsfeed-com---palette-dark .cc-cp-body-tabs-item-link:focus,
+.termsfeed-com---palette-dark .cc-pc-head-lang select:focus {
+  box-shadow: 0 0 0 2px #F49423 !important; 
+}
+.termsfeed-com---pc-dialog .cc-cp-foot-byline a {
+  color: #F49423 !important;
+}
 .primary-button a {
   display: inline-block;
   background-color: #F49423;
@@ -351,8 +384,15 @@ padding-left: .5em;
 #contact button:hover {
   color: #242529;
 }
+#contact .button-area span {
+  text-align: center;
+  margin-top: 0.5em;
+}
 
-
+#loadmap a:hover {
+    color: #F49423;
+    text-decoration: underline;
+  }
 .map {
   margin-bottom: 30px;
   width: 100%;
@@ -360,7 +400,16 @@ padding-left: .5em;
   padding: 30px 20px;
 }
 
-
+.map .spinner-border {
+  position: relative;
+}
+.modalcolor a {
+  color: #F49423;
+}
+.modalcolor .modal-content {
+  background-color: #242529;
+  color: #fff;
+}
 
 footer {
   text-align: center;
