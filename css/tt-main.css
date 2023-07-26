@@ -630,3 +630,10 @@ body {
     filter: unset;
   }
 }
+@media screen and (max-width: 400px) {
+  .main-container .main-right { 
+   float: none;
+   width:auto;
+   height:auto;
+ }
+}
