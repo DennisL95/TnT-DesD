@@ -580,6 +580,11 @@ body {
 .service-content .service-item {
     height:  7em;
   }
+
+      .main-container .main-right .slider-left .slider-right { 
+     display:none
+   }
+ }
 }
 
 @media (max-height: 915px) and (orientation: portrait) {
@@ -603,6 +608,10 @@ body {
     ms-flex:  0 0 45%;
     flex: 0 0 45%;
     margin: -.5em 0.5em 1em
+  }
+
+  .main-container .main-right .slider-left .slider-right { 
+    display:none
   }
 }
 
