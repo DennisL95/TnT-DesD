@@ -544,8 +544,13 @@ body {
 .service-content .service-item {
     height:  7em;
   }
+.main-content span {
+    font-size: .85em;
 }
-
+.main-content h1 {
+    font-size: 2.5rem;
+}
+}
 @media (max-height: 915px) and (orientation: portrait) {
 
   .service-content {
