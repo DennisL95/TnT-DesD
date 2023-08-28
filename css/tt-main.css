@@ -572,6 +572,9 @@ body {
     flex: 0 0 45%;
     margin: -0.5em 0.5em 1em
   }
+    .main {
+    display: none;
+    }
 }
 
 @media (min-width: 1200px) {
