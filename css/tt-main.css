@@ -238,14 +238,14 @@ padding-left: .5em;
 
 .main-content h1 {
   color: #F49423;
-  font-size: 3em;  
+  /*font-size: 3em;*/  
 }
 .main-content h2 {
   color: #F49423;
   margin-top: -.5em;
 }
 .main-content span {
-  font-size: 1.25em;
+  /*font-size: 1.25em;*/
   display: inline-block;
   margin-bottom: 2em;
   margin-top: 1em;
